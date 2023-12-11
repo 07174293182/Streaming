@@ -1,0 +1,35 @@
+POST http://localhost:3333/series
+Content-Type: application/json
+
+{
+        "Nome": "Nome 01",
+        "Diretor": "Diretor 01",
+        "Duração": "Duração 01",
+        "Gêneros": "Gêneros 01",
+        "Classificação": "Classificação 01"
+}
+
+###
+
+GET http://localhost:3333/series
+
+###
+
+GET http://localhost:3333/series?search=Sandman
+
+###
+
+PUT http://localhost:3333/series
+Content-Type: application/json
+
+{
+        "Nome": "Sandman",
+        "Dirteor": "Jamie Childs",
+        "Duração": "1 temporadas",
+        "Gêneros": "Drama",
+        "Classificação": "18 anos"
+} 
+
+###
+
+DELETE http://localhost:3333/series
